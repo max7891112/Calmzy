@@ -1,0 +1,56 @@
+.header {
+    
+    &__container {
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        background-color: $color-white;
+        padding: 0 30px;
+        border-radius: 10px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+        @include text(Montserrat, 18px, 22px, 400);
+        li{
+            transition: all .3s ease;
+            cursor: pointer;
+            &:hover{
+                color: $color-blue;
+            }
+        }
+        margin-left: 100px;
+        @media (max-width: 1200px) {
+            margin-left: 0;
+        }
+    }
+
+    &__button-container {
+        display: flex;
+        gap: 10px;
+        margin: 15px 0;
+    }
+
+    &__button-enter {
+        width: 122px;
+        height: 50px;
+        border-radius: 10px;
+        border: 3px solid $color-blue;
+        background-color: transparent;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-blue;
+        @include text(Montserrat, 16px, 20px, 600);
+        transition: all .3s ease;
+        
+        &:hover{
+            border-color: $color-dark-blue;
+            color: $color-dark-blue;
+        }
+    }
+}

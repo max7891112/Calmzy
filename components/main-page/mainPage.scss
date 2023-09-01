@@ -1,0 +1,92 @@
+.main-page {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+    &__title-container{
+        position: relative;
+        margin-top: 220px;
+    }
+
+    &__title {
+        @include text('Bebas Neue', 120px, 120px, 700);
+        @media (max-width: 1350px) {
+            @include text('Bebas Neue', 100px, 100px, 700);
+        }
+        @media (max-width: 1250px) {
+            @include text('Bebas Neue', 80px, 80px, 700);
+        }
+        @media (max-width: 800px) {
+            @include text('Bebas Neue', 60px, 60px, 700);
+            text-align: center;
+        }
+        @media (max-width: 550px) {
+            @include text('Bebas Neue', 45px, 45px, 700);
+        }
+        @media (max-width: 400px) {
+            @include text('Bebas Neue', 35px, 35px, 700);
+        }
+    }
+
+    &__someGirl {
+        position: absolute;
+        top: -165px;
+        left: 285px;
+        @media (max-width: 800px) {
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @media (max-width: 550px) {
+            top: -70%;
+        }
+        @media (max-width: 400px) {
+            top: -85%;
+        }
+    }
+
+    &__someMen {
+        float: left;
+        @media (max-width: 1110px) {
+            display: none;
+        }
+    }
+
+    &__girlPhone {
+        position: absolute;
+        top: 31%;
+        right: 0%;
+        @media (max-width: 800px) {
+            display: none;
+        }
+    }
+
+    &__footer-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        @media (max-width: 550px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__description {
+        max-width: 340px;
+        @include text('Montserrat', 16px, 20px, 400);
+        margin-left: 350px;
+        @media (max-width: 1110px) {
+            margin-left: 0;
+        }
+        @media (max-width: 550px) {
+            text-align: center;
+        }
+    }
+
+    &__button-choice{
+        align-self: center;
+        @media (max-width: 550px) {
+            margin-top: 20px;
+        }
+    }
+}

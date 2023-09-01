@@ -1,15 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calmzy</title>
+    <link rel="stylesheet" href="./index.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="./index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
 </head>
 <body>
     <div class="main">
         <header class="header">
-            
+            <div class="header__container">
+                <a href="#"><img src="./components/header/img/CALMZY.svg" alt="logo"></a>
+                <ul class="header__list">
+                    <li><a href="#"></a>О нас</li>
+                    <li><a href="#"></a>Для бизнеса</li>
+                    <li><a href="#"></a>Сертификаты</li>
+                    <li><a href="#"></a>Блог</li>
+                </ul>
+                <div class="header__button-container">
+                    <button class="header__button-enter">Вход</button>
+                    <button class="header__button-choice button-choice button-choice_blue">Подобрать психолога</button>
+                </div>
+            </div>
         </header>
+
+        <div class="main-page">
+            <div class="main-page__title-container">
+                <div class="main-page__someMen">
+                    <img src="./components/main-page/img/menDrinkTea.png" alt="some men">
+                </div>
+                <h1 class="main-page__title">Сделайте шаг навстречу<br>
+                    лучшей версии себя<br>
+                    когда и где вам удобно
+                </h1>
+                <div class="main-page__someGirl">
+                    <img src="./components/main-page/img/girlWithPhone.png" alt="some girl">
+                </div>
+                
+                <div class="main-page__girlPhone">
+                    <img src="./components/main-page/img/girlLiePhone.png" alt="girl with phone">
+                </div>
+                
+            </div>
+            
+            <div class="main-page__footer-container">
+                <p class="main-page__description">Переписка и онлайн-консультации с проверенными специалистами.
+                     Заполните анкету и получите список психологов для работы с вашей проблемой.
+                </p>
+                <button class="main-page__button-choice button-choice button-choice_blue">Подобрать психолога</button>
+            </div>
+        </div>
+
+        <div class="our-service">
+            <div class="our-service__heading-container">
+                <h2 class="our-service__title">С чем могут помочь наши специалисты</h2>
+                <p class="our-service__subtitle">Популярные обращения, с которыми успешно справляются наши психологи</p>
+            </div>
+            <div class="swiper our-service__swiper-container">
+                <div class="swiper-wrapper our-service__swiper-wrapper">
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-small">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/female-holding-umbrella.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Стресс и депрессии</p>
+                    </div>
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-medium">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/female-drinking-tea.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Чувство одиночества</p>
+                    </div>
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-large">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/working-man.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Проблемы на работе</p>
+                    </div>
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-small">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/young-couple-looking-at-each-other.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Трудности в отношениях</p>
+                    </div>
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-large">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/man-teaching-his-daughter.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Воспитание детей</p>
+                    </div>
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-medium">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/female-brush-her-hair.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Поиск себя</p>
+                    </div>
+
+
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-small">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/female-holding-umbrella.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Стресс и депрессии</p>
+                    </div>
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-medium">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/female-drinking-tea.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Чувство одиночества</p>
+                    </div>
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-large">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/working-man.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Проблемы на работе</p>
+                    </div>
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-small">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/young-couple-looking-at-each-other.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Трудности в отношениях</p>
+                    </div>
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-large">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/man-teaching-his-daughter.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Воспитание детей</p>
+                    </div>
+                    <div class="swiper-slide our-service__swiper-slide our-service__swiper-slide_size-medium">
+                        <div class="our-service__swiper-img-container">
+                            <img src="./components/our-service/img/female-brush-her-hair.png" alt="picture">
+                        </div>
+                        <p class="our-service__text">Поиск себя</p>
+                    </div>
+                </div>
+            </div>     
+        </div>  
     </div>
 </body>
 </html>
