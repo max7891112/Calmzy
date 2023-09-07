@@ -1,5 +1,5 @@
 .header {
-    
+    padding: 0 10px;
     &__container {
         max-width: 1440px;
         display: flex;
@@ -9,13 +9,16 @@
         background-color: $color-white;
         padding: 0 30px;
         border-radius: 10px;
+        @media (max-width:600px) {
+            justify-content: space-around;
+        }
     }
 
     &__list {
         display: flex;
         gap: 20px;
         @include text(Montserrat, 18px, 22px, 400);
-        li{
+        li a{
             transition: all .3s ease;
             cursor: pointer;
             &:hover{
@@ -26,12 +29,22 @@
         @media (max-width: 1200px) {
             margin-left: 0;
         }
+        @media (max-width: 850px) {
+            flex-direction: column;
+            margin: 10px 0;
+        }
     }
 
     &__button-container {
         display: flex;
         gap: 10px;
         margin: 15px 0;
+        @media (max-width:999px) {
+            flex-direction: column;
+        }
+        @media (max-width:600px) {
+            display: none;
+        }
     }
 
     &__button-enter {
@@ -47,6 +60,9 @@
         color: $color-blue;
         @include text(Montserrat, 16px, 20px, 600);
         transition: all .3s ease;
+        @media (max-width:999px) {
+            width: 100%;
+        }
         
         &:hover{
             border-color: $color-dark-blue;
