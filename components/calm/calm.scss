@@ -1,0 +1,141 @@
+.calm {
+
+    background-color: transparent;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    &__content-wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &__left-p {
+        flex-basis: 250px;
+        margin-right: 30px;
+    }
+
+    &__title {
+        @include text('Bebas Neue', 40px, normal, 700);
+    }
+
+    &__subtitle {
+        @include text('Montserrat', 18px, normal, 400);
+        margin-top: 30px;
+    }
+
+    &__right-p {
+        max-width: 700px;
+        margin-left: auto;
+    }
+
+    &__items-wrapper {
+        min-height: 550px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-left: 0;
+        transition:all .6s linear 0s;
+        cursor: pointer;
+    }
+
+    &__item-l-p {
+        flex-grow: 1;
+    }
+
+    &__item-title {
+        @include text('Bebas Neue', 30px, normal, 400);
+        max-width: 467px;
+    }
+
+    &__item-subtitle {
+        @include text('Montserrat', 16px, normal, 400);
+        color: #767474;
+        margin-top: 20px;
+        max-height: 77px;
+        opacity: 1;
+        overflow: visible;
+        transition:all .6s linear 0s;
+        // transition-duration: 0ms;
+    }
+
+    &__img {
+        width: fit-content;
+        height: fit-content;
+        align-self: flex-start;
+        transition:all .6s linear 0s;
+    }
+}
+
+@media(max-width: 775px) {
+    .calm {
+
+		&__items-wrapper {
+            min-height: 717px;
+		}
+
+		&__item-subtitle {
+            max-height: 95px;
+            font-size: 13px;
+		}
+
+    }
+
+}
+
+@media (max-width: 647px) {
+    .calm {
+
+		&__content-wrapper {
+            flex-direction: column;
+		}
+
+        &__title {
+            text-align: center;
+        }
+
+		&__left-p {
+            flex-basis: 170px;
+		}
+
+        &__subtitle {
+            margin-bottom: 50px;
+        }
+
+    }
+
+}
+
+@media (max-width: 392px) {
+    .calm {
+
+		&__item-subtitle {
+            max-height: 150px;
+		}
+    }
+
+}
+
+// animation classes
+
+.calm-anim {
+
+    &__hidden {
+        opacity: 0;
+        max-height: 0px;
+        overflow: hidden;
+        // transition:all .6s linear 0s;
+    }
+
+    &__move {
+        margin-left: 20px;
+        // transition:all .6s linear 0s;
+    }
+
+    &__arrow {
+        transform: rotate(-180deg);
+    }
+}

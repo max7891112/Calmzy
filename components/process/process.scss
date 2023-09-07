@@ -1,0 +1,223 @@
+.process {
+
+    margin-bottom: 200px;
+    padding: 100px 10px 0 10px;
+    background-color: $color-dark-blue;
+    overflow: hidden;
+
+    &__content-wrapper {
+        display: flex;
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 515px;
+    }
+
+    &__left-p {
+        flex-basis: 274px
+    }
+
+    &__title {
+        @include text('Bebas Neue', 40px, normal, 700);
+        color: $color-white;
+    }
+
+    &__right-p {
+        margin-left: auto;
+        flex-basis: 1068px;
+    }
+
+    &__wrapper-items {
+        max-width: 1050px;
+        margin-left: auto;
+        position: relative;
+    }
+
+    &__item {
+        background-color: $color-white;
+        border-radius: 10px;
+        box-shadow: 0px -1px 5px 0px $color-dark-blue;
+        display: flex;
+        width: 100%;
+        position: absolute;
+        cursor: pointer;
+
+        &:nth-child(2) {
+            top: 70px;
+            opacity: 1;
+            transition: all ease 1s;
+        }
+        &:nth-child(3) {
+            top: 140px;
+            opacity: 1;
+            transition: all ease 1s;
+        }
+        &:nth-child(4) {
+            top: 210px;
+            opacity: 1;
+            transition: all ease 1s;
+        }
+    }
+
+    &__text-part {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+    }
+
+    &__item-head {
+        @include text('Bebas Neue', 30px, normal, 400);
+        padding: 30px 0 0 30px;
+        width: 662px;
+    }
+
+    &__item-content {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    &__item-text {
+        margin: 70px 0 140px 30px;
+        @include text('Montserrat', 16px, normal, 400);
+        max-width: 447px;
+        min-height: 95px;
+    }
+
+    &__img-wrapper {
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 50px;
+        min-width: 249px;
+    }
+
+    &__img {
+        display: block;
+        margin-left: auto;
+        margin:0 100px 0 0;
+    }
+}
+
+@media (max-width: 1277px) {
+    .process {
+
+		&__left-p {
+            padding-right: 10px;
+		}
+
+		&__item-head {
+            width: fit-content;
+		}
+
+    }
+
+}
+
+@media (max-width: 954px) {
+    .process {
+
+		&__item {
+            flex-direction: column;
+            align-items: center;
+		}
+
+		&__text-part {
+            width: 100%;
+		}
+
+		&__item-head {
+           align-self: flex-start;
+           padding-right: 30px;
+		}
+
+		&__item-text {
+            margin: 30px auto;
+            padding-left: 30px;
+            max-width: 1000px;
+            padding-right: 30px;
+		}
+
+		&__item-content {
+            justify-content: center;
+            align-items: center;
+		}
+
+		&__img-wrapper {
+            min-width: 0;
+		}
+
+		&__img {
+            margin: 0;
+		}
+    }
+
+}
+
+@media (max-width: 638px) {
+    .process {
+
+		&__content-wrapper {
+            flex-direction: column;
+		}
+
+		&__left-p {
+            flex-basis: 116px;
+		}
+
+        &__title {
+            text-align: center;
+        }
+
+		&__title {
+		}
+
+		&__right-p {
+            margin-left: 0;
+            flex-basis: 190px;
+		}
+
+    }
+
+}
+
+@media (max-width: 382px) {
+    .process {
+
+		&__content-wrapper {
+            padding-bottom: 620px;
+		}
+
+		&__item {
+
+            &:nth-child(4) {
+                min-height: 580px;
+            }
+		}
+    }
+
+}
+
+// animation classes
+
+.p-anim {
+
+    &__item {
+
+        &:nth-child(2) {
+            top: 470px;
+            opacity: 0;
+            transition: all ease 1s;
+        }
+        &:nth-child(3) {
+            top: 540px;
+            opacity: 0;
+            transition: all ease 1s;
+        }
+        &:nth-child(4) {
+            top: 610px;
+            opacity: 0;
+            transition: all ease 1s;
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+// "основной" код.scss в request.scss
+
+@media (max-width: 1107px) {
+    .gift {
+
+        &__button-choice {
+            width: 95%;
+            margin: 25px auto 35px auto;
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    .gift {
+        justify-content: center;
+
+        &__img-wrapper {
+            padding-left: 0;
+        }
+    }
+}
