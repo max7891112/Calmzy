@@ -7,7 +7,7 @@ import Feedback from './components/feedback/feedback.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     mySwiper.addInitialization();
-    firstLesson.visibleElement();
+    // firstLesson.visibleElement();
     Process.visibleElement();
     Calm.visibleElement();
     Feedback.addInitialization();
