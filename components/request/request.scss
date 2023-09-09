@@ -18,6 +18,7 @@
 
     &__title {
         @include text('Bebas Neue', 30px, normal, 700);
+        margin-bottom: 30px;
     }
 
     &__text-description {

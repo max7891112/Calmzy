@@ -1,0 +1,61 @@
+// "основной" код в calm.scss в папке components
+
+.calm-employee {
+    background-color: $color-dark-blue;
+    color: $color-white;
+
+    &__subtitle {
+        display: none;
+    }
+
+    &__left-p {
+        flex-basis: 268px;
+    }
+
+    &__items-wrapper {
+        min-height: 380px;
+    }
+   
+}
+
+@media (max-width: 893px) {
+    .calm-employee {
+    
+        &__items-wrapper {
+            min-height: 435px;
+        }
+       
+    }
+}
+
+@media (max-width: 671px) {
+
+    .calm-employee {
+
+        &__left-p {
+            margin-right: 20px;
+        }
+
+       
+    }
+}
+
+@media (max-height: 647px) {
+    .calm-employee {
+
+        &__left-p {
+            flex-basis: 150px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-height: 398px) {
+
+    .calm-employee {
+
+        &__items-wrapper {
+            min-height: 520px;
+        }
+    }
+}

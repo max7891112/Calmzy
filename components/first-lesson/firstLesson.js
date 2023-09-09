@@ -37,12 +37,15 @@ class firstLesson {
 
         };
 
-        window.addEventListener('scroll', function () {
-            Visible(title);
-        });
+        if(title) {
 
-        // А также запустим функцию сразу. А то вдруг, элемент изначально видно
-        Visible(title);
+            window.addEventListener('scroll', function () {
+                Visible(title);
+            });
+    
+            // А также запустим функцию сразу. А то вдруг, элемент изначально видно
+            Visible(title);
+        }
 
 
     }

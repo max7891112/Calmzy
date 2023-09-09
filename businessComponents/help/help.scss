@@ -1,0 +1,83 @@
+// "основной" код в call.scss в папке components
+
+.help {
+
+    &__img-wrapper {
+        padding-left: 0;
+    }
+
+    &__text-block {
+        margin: 150px 15px 0 15px;
+    }
+
+    &__title {}
+
+    &__text-description {}
+
+    &__button-choice {
+        margin: 350px 65px 0px auto;
+    }
+}
+
+@media (max-width: 1416px) {
+
+    .help {
+
+        &__img-wrapper {
+            margin-left: auto;
+        }
+
+        &__text-block {
+            margin: 150px 15px 0 15px;
+        }
+
+        &__button-choice {
+            width: 95%;
+            margin: 0px auto 0px auto;
+        }
+    }
+}
+
+@media (max-width: 1084px) {
+    .help {
+
+        justify-content: center;
+
+        &__img-wrapper {
+            margin: 0;
+        }
+    
+        &__text-block {
+            flex-basis: 700px;
+            margin: 0px 15px 0 15px;
+        }
+    
+        &__title {
+            text-align: center;
+        }
+    
+        &__text-description {
+            margin-right: 0;
+            max-width: 100%;
+            text-align: center;
+        }
+    
+        &__button-choice {
+
+        }
+    } 
+}
+
+@media (max-width: 740px) {
+    .help {
+
+        &__img-wrapper {
+            
+        }
+
+        &__img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
