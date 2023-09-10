@@ -6,6 +6,7 @@
 // font-family: 'Bebas Neue', sans-serif;
 
 $color-white: #FFFFFF;
+$color-white-fon: #F8F9FD;
 $color-black: #000000;
 $color-blue: #4370E2;
 $color-dark-blue: #263F91;
@@ -53,8 +54,50 @@ a{
     width: 100%;
     height: fit-content;
     // padding: 0 10px;
-    background-color: #b0d9cb;
+    background-color: $color-white-fon;
     padding-top: 25px;
+
+    &__fon-1 {
+        position: absolute;
+        left: 0;
+        top: 153px;
+        border-radius: 452px;
+        background: var(--Blue, #4087D5);
+        filter: blur(270.5px);
+        width: 283px;
+        height: 283px;
+    }
+
+    &__fon-2 {
+        position: absolute;
+        right: 0;
+        top: 622px;
+        width: 283px;
+        height: 283px;
+        border-radius: 452px;
+        background: var(--Green, #23AC52);
+        filter: blur(270.5px);
+    }
+
+    &__second-fon-1 {
+        top: 4917px;
+    }
+
+    &__second-fon-2 {
+        top: 3327px;
+    }
+    
+    &__third-fon-1 {
+        bottom: 800px;
+    }
+
+    &__third-fon-2 {
+        bottom: 568px;
+    }
+
+    &__fourth-fon-2 {
+        top: 2070px;
+    }
 }
 
 .button-choice {

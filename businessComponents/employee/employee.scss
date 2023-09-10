@@ -3,6 +3,8 @@
 .calm-employee {
     background-color: $color-dark-blue;
     color: $color-white;
+    margin-top: 0;
+    padding-top: 100px;
 
     &__subtitle {
         display: none;
@@ -14,6 +16,14 @@
 
     &__items-wrapper {
         min-height: 380px;
+    }
+
+    &__item-subtitle {
+        color: $color-white;
+    }
+
+    &__img {
+        
     }
    
 }
