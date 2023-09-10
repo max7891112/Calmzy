@@ -1,0 +1,81 @@
+.card-certificate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: all .5s ease;
+    &:hover{
+        background-color: $color-dark-blue;
+    }
+
+    &:hover .card__price, &:hover .card__title, &:hover .card__text, &:hover .card__gift{
+        color: $color-white;
+    }
+
+    &:hover svg path:nth-child(1){
+        fill: $color-white;
+    }
+    &:hover svg path:nth-child(n + 2){
+        fill: #23AC52;
+        stroke: #23AC52;
+    }
+
+    &:hover .card__svg{
+        
+        path{
+            fill: $color-dark-blue !important;
+            stroke: $color-white;
+        }
+
+    }
+}
+
+ .card__price,  .card__title,  .card__text, .card__gift{
+    transition: all .5s ease;
+ }
+
+.card__price{
+    @include text('Bebas Neue', 20px, 24px, 400);
+    padding: 0 30px 20px 30px;
+    opacity: 0;
+}
+
+.card__gift{
+    @include text(Montserrat, 16px, 20px, 600);
+    color: $color-blue;
+    padding: 0 30px 30px 30px;
+    position: relative;
+    max-width: max-content;
+    opacity: 0;
+}
+
+.card__svg{
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        fill: $color-white;
+        path{
+            transition: all .5s ease;
+            stroke: $color-blue;
+        }
+}
+
+.card__img-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    opacity: 0;
+    svg path{
+        transition: all 1s ease;
+    }
+
+    svg path:nth-child(1){
+        fill: 020202;
+    }
+
+    svg path:nth-child(n + 2){
+        fill: #F79155;
+        stroke: #F79155;
+    }
+}

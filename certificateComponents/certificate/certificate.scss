@@ -1,0 +1,18 @@
+// "основной" код process.scss в папке components
+
+.certificate {
+    background: transparent;
+
+    &__content-wrapper {
+        // padding-bottom: 324px;
+    }
+    
+    &__title {
+        color: $color-black;
+    }
+
+    &__item {
+        border-top: 1px solid #000;
+        box-shadow: none;
+    }
+}
