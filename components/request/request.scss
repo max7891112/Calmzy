@@ -6,6 +6,9 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 1440px;
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
 
     &__img-wrapper {
         padding-left: 90px;

@@ -59,28 +59,31 @@ a{
 
     &__fon-1 {
         position: absolute;
-        left: 0;
+        left: 0px;
         top: 153px;
         border-radius: 452px;
         background: var(--Blue, #4087D5);
         filter: blur(270.5px);
-        width: 283px;
-        height: 283px;
+        width: 320px;
+        height: 320px;
+
+        object-fit: contain;
     }
 
     &__fon-2 {
         position: absolute;
-        right: 0;
+        right: 0px;
         top: 622px;
-        width: 283px;
-        height: 283px;
+        width: 320px;
+        height: 320px;
         border-radius: 452px;
         background: var(--Green, #23AC52);
         filter: blur(270.5px);
+        object-fit: contain;
     }
 
     &__second-fon-1 {
-        top: 4917px;
+        top: 4914px;
     }
 
     &__second-fon-2 {
@@ -88,15 +91,23 @@ a{
     }
     
     &__third-fon-1 {
-        bottom: 800px;
+        top: 6586px;
     }
 
     &__third-fon-2 {
-        bottom: 568px;
+        top: 6192px;
     }
 
     &__fourth-fon-2 {
         top: 2070px;
+    }
+
+    &__third-fon-2-business {
+        top: 4900px;
+    }
+
+    &__fourth-fon-1 {
+        top: 1900px;
     }
 }
 

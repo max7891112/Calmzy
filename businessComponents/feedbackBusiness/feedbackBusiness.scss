@@ -43,3 +43,11 @@
             color: $color-dark-blue;
         }
 }
+
+.feedback-business {
+    background: transparent;
+
+    &__title {
+        color: $color-black;
+    }
+}

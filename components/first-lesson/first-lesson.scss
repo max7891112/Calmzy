@@ -4,6 +4,8 @@
     background-color: $color-dark-blue;
     color: $color-white;
     padding: 100px 10px 80px 10px;
+    position: relative;
+    z-index: 1;
 
     &__content-wrapper {
         display: flex;

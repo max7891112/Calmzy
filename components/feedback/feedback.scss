@@ -2,6 +2,8 @@
     width: 100%;
     background-color: $color-dark-blue;
     padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
 
     &__container{
         // // max-width: 1440px;

@@ -5,6 +5,8 @@
     color: $color-white;
     margin-top: 0;
     padding-top: 100px;
+    position: relative;
+    z-index: 1;
 
     &__subtitle {
         display: none;
