@@ -13,7 +13,7 @@ class BestSpecAnimation {
         })
          gsap.to('.card__title',{
             scrollTrigger: {
-                trigger: '.our-service',
+                trigger: '.process',
                 start: 'center top',
             },
             opacity: 1,
@@ -23,7 +23,7 @@ class BestSpecAnimation {
 
         gsap.to('.card__text',{
             scrollTrigger: {
-                trigger: '.our-service',
+                trigger: '.process',
                 start: 'center top',
             },
             opacity: 1,
@@ -33,7 +33,7 @@ class BestSpecAnimation {
 
         gsap.to('.card__price',{
             scrollTrigger: {
-                trigger: '.our-service',
+                trigger: '.process',
                 start: 'center top',
             },
             opacity: 1,
@@ -42,7 +42,7 @@ class BestSpecAnimation {
         })
         gsap.to('.card__gift',{
             scrollTrigger: {
-                trigger: '.our-service',
+                trigger: '.process',
                 start: 'center top',
             },
             opacity: 1,
@@ -52,7 +52,7 @@ class BestSpecAnimation {
 
         gsap.to('.card__img-container',{
             scrollTrigger: {
-                trigger: '.our-service',
+                trigger: '.process',
                 start: 'center top',
             },
             opacity: 1,
